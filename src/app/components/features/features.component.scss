@@ -1,0 +1,27 @@
+.features {
+  font-size: 1.2em;
+  padding: 0rem 5rem 5rem;
+
+  .heading {
+    font-size: 1.2em;
+    padding: 1em 0em;
+    font-family: "Signika Negative", sans-serif;
+    font-weight: 600;
+  }
+
+  .feature-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+
+    .feature {
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+      padding: 10px;
+      background: white;
+
+      .fa {
+        color: rgb(141, 126, 255)
+      }
+    }
+  }
+}

@@ -1,0 +1,123 @@
+.home-banner {
+    background: linear-gradient(
+      180deg,
+      rgba(141, 126, 255) -28.35%,
+      rgba(149, 122, 255, 0)
+    );
+    margin: 0;
+  
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5rem;
+      padding: 5rem 2rem;
+  
+      @media (min-width: 1280px) {
+        flex-direction: row;
+        padding: 5rem;
+        gap: 1rem;
+      }
+  
+      .banner-image img {
+        width: 17vh;
+        object-fit: cover;
+  
+        @media(min-width: 768px) {
+          width: 47vh;
+        }
+  
+        @media (min-width: 1280px) {
+          width: 60vh;
+          padding: 0 1em 0 3em;
+        }
+      }
+  
+      .banner-copy {
+        // padding: 0em 2.5em 0em 5em;
+        width: 100%;
+        padding: 0rem;
+  
+        @media(min-width: 1025px) {
+        width: 39vw;
+        padding: 0 3rem;
+        }
+        
+  
+        h1 {
+          font-size: 2.5em;
+          margin: 0;
+          font-family: "Signika Negative", sans-serif;
+          font-weight: 700;
+
+          @media (min-width: 768px) {
+            font-size: 4.5em
+          }
+        }
+  
+        h3 {
+          font-family: "Signika Negative", sans-serif;
+          font-weight: 500;
+          font-size: 1.9em;
+          line-height: 1.5;
+
+          @media(min-width: 768px) {
+            font-size: 2em;
+          }
+
+          @media(min-width: 1280px) {
+            font-size: 1.5em;
+          }
+        }
+  
+        p {
+          font-family: "Quicksand", sans-serif;
+          font-weight: 500;
+          font-size: 25px;
+          line-height: 1.5;
+
+          @media(min-width: 768px) {
+            font-size: 30px;
+          }
+
+          @media(min-width: 1280px) {
+            font-size: 20px;
+          }
+        }
+  
+        .button {
+          padding: 20px 0;
+          .view-button {
+            padding: 20px 30px;
+            text-transform: uppercase;
+            background: rgb(141, 126, 255);
+            border: 2px solid rgb(141, 126, 255);
+            box-shadow: 0 5px 10px 0 rgba(141, 126, 255, 0.4);
+            color: white;
+            font-family: "Signika Negative", sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            letter-spacing: 0.2;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.4s;
+            &:hover {
+              opacity: 0.8;
+              box-shadow: rgba(141, 126, 255, 0.4);
+            }
+
+            @media(min-width: 768px) {
+                padding: 25px 50px;
+                font-size: 1.5rem;
+            }
+
+            @media(min-width: 1280px) {
+                padding: 20px 30px;
+                font-size: 1em;
+            }
+          }
+        }
+      }
+    }
+  }
+  

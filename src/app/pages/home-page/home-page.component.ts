@@ -3,6 +3,7 @@ import { BannerComponent } from '../../components/banner/banner.component';
 import { FeaturesComponent } from '../../components/features/features.component';
 import { ArticleSectionComponent } from '../../components/article-section/article-section.component';
 import { FaqSectionComponent } from '../../components/faq-section/faq-section.component';
+import { PricingComponent } from '../../components/pricing/pricing.component';
 
 @Component({
   selector: 'app-home-page',
@@ -11,7 +12,8 @@ import { FaqSectionComponent } from '../../components/faq-section/faq-section.co
     BannerComponent,
     FeaturesComponent,
     ArticleSectionComponent,
-    FaqSectionComponent
+    FaqSectionComponent,
+    PricingComponent
   ],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss'

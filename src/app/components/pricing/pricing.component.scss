@@ -1,0 +1,133 @@
+.pricing {
+    background: linear-gradient(
+      20deg,
+      rgba(141, 126, 255) -28.35%,
+      rgba(149, 122, 255, 0)
+    );
+  height: auto;
+  padding: 5em 2em;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+
+  @media(min-width: 1024px) {
+    padding: 5em 2em;
+  }
+
+  .heading {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5em;
+    line-height: 1.7;
+    margin: 0 0.5em;
+
+    @media(min-width: 1280px) {
+        padding: 1em 3em 1em;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    @media(min-width: 1280px) {
+      flex-direction: row;
+    }
+
+    .pricing-copy {
+      .heading {
+        color: black;
+        font-family: "Rajdhani", sans-serif;
+        font-weight: 00;
+        font-style: normal;
+        font-size: 1.5em;
+        line-height: 1.7;
+
+        @media(min-width:768px) {
+          font-size: 2em;
+        }
+
+
+      }
+
+      p {
+        color: black;
+      }
+
+    }
+
+    .pricing-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+      margin: 1.5em 0;
+
+      @media(min-width: 1024px) {
+        flex-direction: row;
+      }
+
+      .pricing-card {
+        background: white;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+        height: auto;
+        padding: 2rem;
+        margin: 1em 0;
+
+        @media(min-width: 1024px) {
+          width: 22vw;
+        }
+
+        @media(min-width: 1280px) {
+          width: 18vw;
+        }
+
+        ul {
+          color: black;
+          font-family: "Rajdhani", sans-serif;
+          font-weight: 300;
+          line-height: 1.5;
+          margin-inline-start: 0;
+          padding-inline-start: 15px;
+
+          li {
+            padding: 0 0 0.5em;
+          }
+        }
+
+        .card-title {
+          font-size: 1.5em;
+          padding: 0.5em 0;
+          font-family: "Rajdhani", sans-serif;
+          font-weight: 600;
+          line-height: 1.5;
+
+          @media (min-width: 1280px) {
+            font-size: 1.1em;
+          }
+        }
+
+        .card-image {
+          padding: 0.5em 1em;
+
+          img {
+            height: 15vh;
+          }
+        }
+
+        .card-price {
+          font-size: 1.7em;
+          padding: 0.5em 0em;
+          font-family: "Rajdhani", sans-serif;
+          font-weight: 700;
+
+          .price-highlight {
+            font-size: 0.5em;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}

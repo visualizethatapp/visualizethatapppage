@@ -1,0 +1,49 @@
+.footer {
+  text-align: center;
+  background: linear-gradient(
+    80deg,
+    rgba(141, 126, 255) -28.35%,
+    rgba(149, 122, 255, 0)
+  );
+  color: black;
+
+  &__content {
+    padding: 2em 1em;
+
+    .title {
+      font-size: 2rem;
+      font-family: "Signika Negative", sans-serif;
+      padding: 1em 0 0.5em;
+      font-weight: 600;
+    }
+
+    .copy {
+      font-family: "Quicksand", sans-serif;
+      font-weight: 500;
+
+      .email-copy {
+        font-size: 1em;
+        line-height: 1.5;
+      }
+
+      .text-breaker {
+        font-size: 1rem;
+        font-family: "Signika Negative", sans-serif;
+        font-weight: 700;
+        padding: 0.5em 0;
+      }
+
+      .social-links {
+        padding: 1em 0;
+
+        .fa-linkedin {
+          color: white;
+          text-decoration: none;
+          font-size: 1em;
+          margin: 0.5rem;
+        }
+      }
+    }
+  }
+
+}

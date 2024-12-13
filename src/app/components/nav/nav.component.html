@@ -1,0 +1,26 @@
+<section class="navigation">
+    <div class="desktop-menu" [ngClass]="{'desktopMenu': true, 'mobileMenu': false}">
+        <div class="nav-logo"><img src="assets/images/visualize-logo.png" alt="logo"></div>
+        <nav class="nav-items">
+            <button>Home</button>
+            <button (click)="scrollTo('article-section')">Why Should I invest?</button>
+            <button (click)="scrollTo('pricing')">Pricing Plans</button>
+            <button (click)="scrollTo('faqs')">FAQs</button>
+            <button (click)="scrollTo('footer')">Say Hello</button>
+        </nav>
+    </div>
+    <div class="mobile-menu" [ngClass]="{'desktopMenu': false, 'mobileMenu': true}">
+        <!-- <div class="nav-logo"><img src="assets/images/visualize-logo.png" alt="logo"></div> -->
+        <button mat-button [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Home</button>
+          <button mat-menu-item (click)="scrollTo('article-section')">Why Should I invest?</button>
+          <button mat-menu-item (click)="scrollTo('pricing')">Pricing Plans</button>
+          <button mat-menu-item (click)="scrollTo('faqs')">FAQs</button>
+          <button mat-menu-item (click)="scrollTo('footer')">Say Hello</button>
+        </mat-menu>
+
+    </div>
+    
+</section>
+
